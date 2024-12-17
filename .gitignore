@@ -1,0 +1,30 @@
+# Ignore logs and temporary files
+/log/*
+!/log/.keep
+/tmp
+
+# Ignore sensitive AWS and environment configuration files
+/.env
+/.env.*
+
+# Ignore system-specific or editor-specific files
+*.swp
+*~
+.DS_Store
+.idea
+.vscode
+*.sublime-workspace
+*.sublime-project
+
+# Ignore bundle config and local gems
+/.bundle
+/vendor/bundle
+Gemfile.lock
+
+# Ignore Docker build artifacts
+.dockerignore
+Dockerfile.*
+/docker-compose.override.yml
+
+# Ignore Rackup temporary files
+.rack
